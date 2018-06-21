@@ -20,10 +20,10 @@
 </head>
 <body>
 	<div class="container">
-		<header id="mainHeader">
+		<header id="mainHeader" class="row">
 			<nav>
 				<ul>
-					<div id="mainNav">
+					<div id="mainNav" class="col-sm-12 format col-md-12 col-lg-12">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
 						<li><a href="#gallery">Gallery</a></li>
@@ -35,14 +35,14 @@
 		</header>
 
 
-		<main id="wrapper" class="clear">
-			<div id="home">
+		<main id="wrapper" class="clear row">
+			<div id="home" class="col-sm-12 col-md-12">
 				<img src="./assets/img/black-bg.jpg">
 				<p class="center">Bold and Black</p>
 
 			</div>
 
-			<div id="about" class="clear">
+			<div id="about" class="clear col-sm-12 col-md-12 col-lg-12">
 				<h2>About</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -56,13 +56,19 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 			</div>
 
-			<div id="gallery" class="clear">
+			<div id="gallery" class="clear row">
 				<h2>Gallery</h2>
 
-				<div>
+				<div class="col-sm-12 col-md-6 col-lg-6">
 
 					<img src="https://lorempixel.com/300/300/">
 					<h3>Sample 1</h3>
@@ -74,7 +80,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 
-				<div>
+				<div class="col-sm-12 col-md-6 col-lg-6">
 					<img src="https://lorempixel.com/300/300/">
 
 					<h3>Sample 2</h3>	
@@ -86,7 +92,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 
-				<div>
+				<div class="col-sm-12 col-md-6 col-lg-6">
 					<img src="https://lorempixel.com/300/300/">
 
 					<h3>Sample 3</h3>
@@ -98,7 +104,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 
-				<div>
+				<div class="col-sm-12 col-md-6 col-lg-6">
 					<img src="https://lorempixel.com/300/300/">
 
 					<h3>Sample 4</h3>
@@ -113,31 +119,67 @@
 
 			</div>
 
-			<div id="contact" class="clear">
-				<h3>Contact</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat.</p>
+			<div id="contact" class="row">
+				<h2>Contact</h2>
 
+
+				<div class="leftContact clear col-sm-12 col-md-12 col-lg-12">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+
+				<div class="rightContact clear col-sm-12 col-md-12 col-lg-12">
+					<form method="GET"	action="./lib/register.php">
+
+						<!-- text -->
+						<div>
+							<label for="userName">Name</label>
+							<input type="text" id="userName" name="userName" placeholder="Enter Username" required>
+						</div>
+
+						<!-- email -->
+						<div>
+							<label for="userEmail">Email Address</label>
+							<input type="email" name="userEmail" id="userEmail" placeholder="juan.delecruz@abc.xyz">
+						</div>
+
+						<div>
+							<label for="userComment">Message</label>
+							<textarea name="userComment" id="userComment" placeholder="Enter your message here"></textarea> <!-- no space dapat -->
+						</div>
+						<div>
+							<input type="submit" name="Post" id="post">
+						</div>
+
+					</form>
+				</div>
 			</div>
+
 
 
 		</main>
 
 
-		<footer id="mainFooter">
-			<div id="left">
-				<p>Copyright &copy; 2018 by Gladys V. Forte</p>
-			</div> <!-- /#left -->
-			<div id="right">
-				<ul>
-					<li><i class="fab fa-facebook fa-2x"></i></li>
-					<li><i class="fab fa-twitter fa-2x"></i></li>
-					<li><i class="fab fa-instagram fa-2x"></i></li>
-					<li><i class="fab fa-youtube fa-2x"></i></li>
-				</ul>
-			</div>	<!-- /#right -->
+		<footer id="mainFooter" class="row">
+			<div class="col-sm-12 format col-md-12 col-lg-12">
+				<div id="left">
+					<p>Copyright &copy; 2018 by Gladys V. Forte</p>
+				</div> <!-- /#left -->
+				<div id="right">
+					<ul>
+						<li><i class="fab fa-facebook fa-2x"></i></li>
+						<li><i class="fab fa-twitter fa-2x"></i></li>
+						<li><i class="fab fa-instagram fa-2x"></i></li>
+						<li><i class="fab fa-youtube fa-2x"></i></li>
+					</ul>
+				</div>	<!-- /#right -->
+
+
+			</div>
 		</footer>
 	</div>
 	<!-- imports custom script -->
